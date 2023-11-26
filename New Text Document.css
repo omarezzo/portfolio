@@ -16,7 +16,10 @@ z-index: 999;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 10px 200px;
+border-radius: 5px;
+}
+nav{
+    padding: 20px;
 }
 .logo{
     text-decoration: none;
@@ -25,17 +28,19 @@ padding: 10px 200px;
     text-transform: uppercase;
     font-size: 1.8em;
     transition: .5s;
+    margin-left: 70px;
 }
 .logo:hover{
     color: aquamarine; 
     font-size: 2em;
 }
+
 .nav a{
     text-decoration: none;
     color: blue;
     font-size: 1.5em;
     font-weight: 510;
-padding-left:20px ;
+padding-left: 20px;
 transition:.5s;
 }
 .nav a:hover{
@@ -66,7 +71,8 @@ section{
 .main h2 span{
     color: rgb(30, 199, 106);
     font-size: 80px;
-    margin-left: 20px;
+    margin: 0 -11px 0 -8px;
+
     margin-top: 60px;
 }
 .mbtn{
@@ -83,24 +89,21 @@ section{
     margin-left: 50px;
     transition: .5s;
     margin-top: 50px;
+    box-shadow:10px 10px  25px black
 }
 .mbtn:hover{
     background-color: rgba(66, 66, 255, 0.884);
     transform: scale(1.1);
 }
 .social{
-    margin-left: 50px;
-    padding-left: 18px;
+    position: absolute;
+    top: 500px;
     font-size: 1.7em;
     transition: .5s;
     letter-spacing: 10px;
     width: fit-content;
     text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     font-weight: 700;
-    margin-top: 140px;
 }
 .social:hover{
     transform: scale(1.1);
@@ -177,28 +180,22 @@ transition: .5s;
    text-align: center; 
    background: linear-gradient(rgba(4, 114, 141, 0.603), rgba(0, 0, 0, 0.904));
     border-radius: 10px;
-   
-    
-    
 }
 .container2{
 display: flex;
 justify-content: center;
-
 flex-wrap: wrap;
-
 }
 .pimg img{
    width: 25em;
     overflow: hidden;
     border-radius: 10px;
-
 }
 .pcard{
    border-radius: 20px;
-margin:20px;
+margin:30px;
  box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.555);
- background-color: rgb(250, 250, 250);
+ background-color: rgb(255, 255, 255);
 border: solid 4px;
 transition: .5s;
 }
@@ -230,8 +227,8 @@ text-shadow: 10px 20px 25px rgba(0, 0, 0, 0.349);
 }
 .pcard2{
     border-radius: 20px;
-    margin:20px;
-    box-shadow: 5px 5px 450px rgba(0, 0, 0, 0.555);
+    margin:30px;
+    box-shadow: 5px 5px 450px rgba(8, 8, 8, 0.555);
     background-color: rgb(255, 255, 255);
    border: solid 4px;
    transition: .5s;
@@ -243,18 +240,19 @@ text-shadow: 10px 20px 25px rgba(0, 0, 0, 0.349);
 .mfont{
     text-decoration: none;
     font-weight: 700;
-    font-size: larger;
+    font-size: 1.3em;
 letter-spacing: 3px;
-color: brown;
-transition: .2s;
+color: rgb(42, 165, 69);
+transition: .4s;
 }
 .mfont:hover{
     scale: 1.1;
-color: rgb(119, 0, 255);
+color: rgb(255, 166, 0)
 }
 .pinfo{
     font-weight: 600;
-    background-color: rgba(112, 112, 112, 0.384);
+    border-radius: 20px;
+    font-size: 1.2em;
 }
 .foot{
 background-color: rgb(24, 105, 105);
@@ -279,149 +277,54 @@ font-size: 1.5em;
 .ftt{
     font-weight:800
 }
-@media (max-width:890px){
-    header{
-     font-size: 14px;
-        padding: 0px 0 0px 0px ;
-        margin: 0 0px 0 0px;
-}
-.logo{
-    margin: 0 0px 0 0px;
-    padding: 0 0 0 0;
-}
-.nav a{
-   margin: 0 47px 11px -37px;
-   padding: 0 0px 0 0px;
-}
-.nav{
-    padding: 20px 0px 20px 0px; 
-}
-.all h2{
-    margin:-50px 0 0px 0;
+@media (max-width:603px){
+
+    section{
+        padding: 100px 10px;
+    }
+nav{
+    padding: 20px 20px 20px 0px;
 
 }
-.main{
-    background-size: 100%  900px;
+header
+.nav a {
+  font-size:1.2em;
+    padding-left: 8px;
 }
-.main h2 span{
+ .logo{
+    margin: 0;
+ }
+ .nav a:hover{
+    color: aquamarine;
     font-size: 1.5em;
-    font-weight: 700;
-    margin-left: -10px;
-    margin-top: 20px;
-    display: block;
-    
-}
-.mbtn{
-    margin-left: -5px;
-    margin-top:4em ;
-}
-.main .social {
-margin-left: -25px;
-font-size: 1.6em;
-}
-
-.content{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-}
-section{
-    padding: 95px 18px;
-}
-.ccard{
-    display: flex;
-align-items: center;
-flex-direction: column;
-}
-.ccard .card2{
-    margin-left: 3.8em;
-}
-.ccard .tt{
-    font-size: 1.9em;
+    }
+    .main h2 span{
+        font-size: 50px;
+        margin:0 -1px 0px -3px;
+    }
+    h2{
+        margin: -30px 0 0px 0px;
+    }
+    .mbtn{
+        margin: 90px 0 0 -10px ;
+        padding: 1em 1.1875em;
+    }
+    .social{
+        position: absolute;
+        top: 450px;
+    }
+    .pimg img{
+        width: 20em;
+    }
+    .pimg2 img {
+        width: 20em;
+    }
+.pinfo{
+    font-size: 1em;
 }
 .foot{
-    font-size: 12px;
-}
-}
-@media (max-width:400px){
-   header{
-    
-   }
-    .main{
-    width: 20em;
-}
-.main h2{
-   font-size: 1.3em;
-   font-weight: 400;
-}
-section{
-    padding: 96px 8px;
-}
-.main .mbtn{
-    font-size: .9em;
-}
-.main .social {
-    margin: 0 0 -30px 0;
-    font-size: 1em;
-    
-    }
-    .projects{
-        display: flex;
-       align-items: center;
-       margin-left: 10px;
-      
-       flex-direction: column;
-    }
-    .pimg img, .pimg2 img{
-        width: 300px;
-    }
-    .ccard .card2{
-        margin-left: 5em;
-    }
-}
-    @media (max-width:314px){
-header{
-    padding: 10 0 10 0;
-    margin:0 0 0 0 ;
-
-}
-.main{
-    background-size: 100% 784px;
-}
-.nav a{
-font-size: 1.1em;
-}
-    
-.pimg img, .pimg2 img{
-    width: 250px;
-}
-.projects{
-   
-margin: 0 0px 0 50px;
-}
-}
-@media (max-width:290px){
-section{
-    padding: 96px 0px;
-   
-   
-}
-    .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.ccard{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    padding: 20px 0 20px 0;
+    text-align: center;
+font-size: .7em;
 }
 }
